@@ -1,3 +1,13 @@
+<ul class="nav-bar" id="owner">
+  <li><a class="nav-link" href="http://localhost:4567/owner/animals">View all animals?</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/owner/animals/unreserved" class="active">View unreserved animals only?</a></li>
+</ul>
+<a href="animals/unreserved">View unreserved animals only?</a>
+<br>
+<br>
+<hr>
+
+<div class="list">
 <img src="<%=@animal.image%>" alt="Picture of <%=@animal.name%>, a <%=@animal.species%>">
 <p>Name: <%= @animal.name %></p>
 <p>Species: <%= @animal.species %></p>
@@ -32,11 +42,12 @@
    <% end %>
    </p>
    <h5>Animal Profile:</h5>
-   <p><%=@animal.about_me%></p>
+   <p class="about_me"><%=@animal.about_me%></p>
     </p>
    <a href="../animals"><button>Back to index?</button></a>
    <br>
    <form method="get" action="request">
-     <input type="submit" value="Request to give this animal a home?"/>
+    <input type="submit" class="delete" value="Request to give this animal a home?"/>
    </form>
    <hr>
+   </div>

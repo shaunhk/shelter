@@ -88,7 +88,10 @@ animal15 = Animal.new({'name' => 'Elvis', 'species' => 'Cat',
 animal15.save()
 animal16 = Animal.new({'name' => 'Rocky', 'species' => 'Parrot',
 'admission_date' => '16/09/18', 'needs_garden' => true, 'image' => '/Rocky.jpg',
-'needs_no_pets' => true, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
+'needs_no_pets' => true, 'needs_company' => false, 'about_me' => 'Rocky is an evil parrot. You will require a garden to get away from this monster.
+
+It is best if you have a family already, because you are not getting a boyfriend with this murderous beast in your home. Aint no one got time for that.
+', 'reserved' => false, 'available_for_adoption' => true})
 animal16.save()
 
 adoption1 = Adoption.new('animal_id' => animal1.id, 'owner_id' => owner1.id)
@@ -104,7 +107,7 @@ adoption5.save()
 adoption6 = Adoption.new('animal_id' => animal14.id, 'owner_id' => owner3.id)
 adoption6.save()
 
-request1 = Request.new({'animal_id' => animal2.id, 'owner_id' => owner1.id, 'phone_number' => 42071241815892, 'email_address' => 'Rats4giveme@msn.com', 'decided' => false})
+request1 = Request.new({'animal_id' => animal2.id, 'owner_id' => owner1.id, 'phone_number' => '071241815892', 'email_address' => 'Rats4giveme@msn.com', 'decided' => false})
 request1.save()
 
 binding.pry

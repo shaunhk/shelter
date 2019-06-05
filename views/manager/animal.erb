@@ -48,10 +48,7 @@
    <br><br>
    </p>
    <p>Animal Profile:</p>
-   <p><%=@animal.about_me%></p>
-    </p>
-   <a href="../animals"><button>Back to index?</button></a>
-   <br>
+   <p class="about_me"><%= @animal.about_me %></p>
    <a href="animal/edit"><button>Update animal details?</button></a>
    <br>
    <form method="post" action="animal/delete">

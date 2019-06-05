@@ -8,13 +8,8 @@ require_relative( '../models/animal.rb' )
 also_reload( '../models/*' )
 
 get '/manager/welcome' do
-  # requests = Request.all()
-  # for request in requests
-  #   if request.decided != 't'
-  #     request.delete!
-  #   end
-  # end
-  # @pending = requests.size()
+  applications = Request.all()
+  @pending = applications.size()
   erb (:"manager/welcome")
 end
 
@@ -29,7 +24,7 @@ get '/manager/adoptions' do
 end
 
 get '/manager/requests' do
-  @requests = Request.all()
+  @applications = Request.all()
   erb (:"manager/request_index")
 end
 

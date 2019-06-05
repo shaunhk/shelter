@@ -12,14 +12,14 @@ button {
 h1 {
   text-align: center;
   font-family: Georgia;
-  color: #07889B;
-  font-size: 50px;
+  color: #3500D3;
+  font-size: 60px;
 }
 
 img {
   width: 400px;
   height: 400px;
-  border-radius: 10%;
+  border-radius: 15%;
 }
 
 p {
@@ -59,6 +59,9 @@ img:hover {
   display: block;
   padding: 100px 0 0 0px;
   text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #374785;
 }
 
 .edit {
@@ -96,6 +99,14 @@ img:hover {
   text-align: center;
 }
 
+.about_me {
+  display: block;
+  width: 500px;
+  text-align: center;
+  align-content: center;
+  padding: 0 0 0 480px;
+}
+
 .button-welcome {
   display: block;
   padding: 0 40px 10px 0;
@@ -107,6 +118,9 @@ img:hover {
 .welcome {
   font-size: 80px;
   text-align: center;
+  color: #659DBD;
+  font-family: sans-serif;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .nav-bar {
@@ -130,10 +144,6 @@ img:hover {
   width: 60px;
   font-size: 40px;
   font-family: Georgia;
-}
-
-.nav-link:hover {
-  color: black;
 }
 
 .filter-bar {
@@ -160,6 +170,11 @@ img:hover {
 .filter-link:hover {
   width: 415px;
   height: 362px;
+  border-radius: 50%;
+  color: #FFCE00;
+}
+
+.nav-link:hover {
   border-radius: 50%;
   color: #FFCE00;
 }
@@ -199,13 +214,19 @@ img:hover {
   clear: both;
   font-size: 20px;
   border-style: solid;
-  border-radius: 25%;
+  border-radius: 15%;
   border-color: #0099CC;
   border-width: 1px;
   border-top: 10px;
   border-bottom: 5px;
   text-align: center;
   background-color: white;
+}
+
+.new-button {
+  background-color: #5AB9EA;
+  font-size: 20px;
+  border-radius: 25%;
 }
 
 .pending {
@@ -224,4 +245,14 @@ img:hover {
 
 #edit-bar {
   top: 0;
+}
+
+#owner {
+  background-color: #3500D3;
+}
+
+#logo {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-family: arial;
+  font-style: italic;
 }

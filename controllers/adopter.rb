@@ -1,5 +1,6 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
+require('pry')
 require_relative( '../models/adoption.rb' )
 require_relative( '../models/request.rb' )
 require_relative( '../models/animal.rb')
@@ -27,8 +28,9 @@ get '/owner/:id/request' do
 end
 
 post '/owner/requests' do
-  @request = Request.new(params)
-  @request.save()
+  # binding.pry
+  @application = Request.new(params)
+  @application.save()
   erb(:"owner/request_new")
 end
 

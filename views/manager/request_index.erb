@@ -7,15 +7,14 @@
 </ul>
 <br><br><br>
 <div class="list">
-<% for request in @requests %>
-  <% if request.decided == 'f' %>
+<% for request in @applications %>
     Owner: <%=request.owner.first_name%> <%=request.owner.second_name%>
     <br>
     Animal: <%=request.animal.name%>
+    <br>
+    Phone_number: <%=request.phone_number%>
+    <br>
+    Email_address: <%=request.email_address%>
     <hr>
-    <form method="post" action="request/approved">
-        <input type="submit" value="Temporarily approved request?"/>
-    </form>
-  <% end %>
 <% end %>
 </div>

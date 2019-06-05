@@ -1,4 +1,7 @@
- <a href="../animals">back to full index</a>
+<ul class="nav-bar" id="owner">
+  <li><a class="nav-link" id="owner-link" href="http://localhost:4567/owner/animals">View all animals?</a></li>
+  <li><a class="nav-link" id="owner-link" href="http://localhost:4567/owner/animals/unreserved" class="active">View unreserved animals only?</a></li>
+</ul>
 <br>
 <br>
 <hr>
@@ -6,7 +9,7 @@
 <% for animal in @animals %>
   <%if animal.available_for_adoption == 't' && animal.reserved == 'f'%>
   <div class="index-box">
-    <a href="../animals"><img src="<%=animal.image%>" alt="Picture of <%=animal.name%>, a <%=animal.species%>"></a>
+    <a href="../<%=animal.id%>/animal"><img src="<%=animal.image%>" alt="Picture of <%=animal.name%>, a <%=animal.species%>"></a>
     <p>Name: <%= animal.name %></p>
     <p>Admission date: <%= animal.admission_date %></p>
     <p>Species: <%= animal.species %></p>
@@ -22,7 +25,7 @@
         <p>Not available
       <% end %>
        for adoption.</p>
-       <a href="<%=animal.id%>/animal"><button>Show Animal?</button></a>
+       <a href="../<%=animal.id%>/animal"><button>Show Animal?</button></a>
        <hr>
       </div>
   <% end %>

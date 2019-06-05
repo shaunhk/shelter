@@ -1,1 +1,11 @@
-<p>Success! You have logged a request for <%=@request.animal.name%>. Mr Reynolds will be back to you soon, <%=@request.owner.first_name%> <%=@request.owner.second_name%>.</p>
+<ul class="nav-bar" id="owner">
+  <li><a class="nav-link" href="http://localhost:4567/owner/animals">View all animals?</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/owner/animals/unreserved" class="active">View unreserved animals only?</a></li>
+</ul>
+<a href="animals/unreserved">View unreserved animals only?</a>
+<br>
+<br>
+<hr>
+<div class="list">
+<p>Success! You have logged a request for <%=@application.animal.name%>. Mr Reynolds will be back to you soon, <%=@application.owner.first_name%> <%=@application.owner.second_name%>.</p>
+</div>
