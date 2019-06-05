@@ -1,0 +1,15 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_adoption">Add adoption</a></li>
+</ul>
+</div><br><br><br>
+<div class="edit">
+<p>Success! <%=@adoption.animal.name%> has found a new home with <%=@adoption.owner.first_name%> <%=@adoption.owner.second_name%>.</p>
+<p>Your records have been updated.</p>
+</div>

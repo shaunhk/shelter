@@ -1,0 +1,38 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_owner">Add owner</a></li>
+</ul>
+<br><br><br>
+<div class=edit>
+<h2>Create new owner</h2>
+<form method="post" action="owners">
+
+  <label for="first_name">First name:</label>
+  <input type="text" name="first_name" id="first_name"/>
+  <br>
+  <label for="second_name">second_name:</label>
+  <input type="text" name="second_name" id="second_name"/>
+  <br>
+  <label for="has_garden"></label>
+  Does the owner have a garden?<input type="radio" name="has_garden" id="has_garden" value="t"> Yes
+  <input type="radio" name="has_garden" id="has_garden" value="f"> No
+  <br>
+  <label for="has_no_pets"></label>
+  Does this owner have any pets currently?<input type="radio" name="has_no_pets" id="has_no_pets" value="f"> Yes
+  <input type="radio" name="has_no_pets" id="has_no_pets" value="t"> No
+  <br>
+  <label for="lives_with_others"></label>
+  Does this customer have a family?<input type="radio" name="lives_with_others" id="lives_with_others" value="t"> Yes
+  <input type="radio" name="lives_with_others" id="lives_with_others" value="f"> No
+  <br>
+  <hr>
+  <input type="submit" value="Create animal">
+
+</form>
+</div>

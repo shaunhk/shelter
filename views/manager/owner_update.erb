@@ -1,0 +1,16 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_owner">Add owner</a></li>
+</ul>
+<div class="list">
+<h1>Owner details updated!</h1>
+<a href="../../<%=@owner.id%>/owner"><button>Show owner?</button></a>
+<a href="../../owners"><button>Back to index?</button></a>
+<a href="../../welcome"><button>Back to home?</button></a>
+</div>

@@ -1,0 +1,40 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_owner">Add owner</a></li>
+</ul>
+<div class="list">
+<br>
+<br>
+<hr>
+<% for owner in @owners %>
+<p>Name: <%= owner.first_name %> <%=owner.second_name%></p>
+  <% if owner.has_garden == 't' %>
+    <p>Has a
+  <% else %>
+    <p>Doesn't have a
+  <% end %>
+   garden. </p>
+  <% if owner.has_no_pets == 'f' %>
+    <p>Has
+  <% else %>
+    <p>Doesn't have any
+  <% end %>
+   other pets. </p>
+   <% if owner.lives_with_others == 'f' %>
+     <p>Lives alone.
+   <% else %>
+     <p>Lives with family.
+   <% end %>
+   </p>
+   <p>Animals in Owner's care: <% names = owner.animals.map{|animal| animal.name}%><%= names.join(", ") %>
+  <br>
+  <a href="<%=owner.id%>/owner"><button>Show Owner?</button></a>
+  <hr>
+<% end %>
+</div>

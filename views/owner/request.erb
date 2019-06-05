@@ -1,0 +1,26 @@
+<h2>Make new request</h2>
+<form action="../requests" method="post">
+  <label>
+  Select an owner:
+    <select name="owner_id">
+      <% for owner in @owners %>
+      <option value="<%= owner.id %>"><%= owner.first_name %> <%= owner.second_name %></option>
+      <% end %>
+    </select>
+  </label><br>
+
+  <label>
+    Select an animal:
+    <select name="animal_id">
+      <option value="<%= @animal.id %>"><%= @animal.name %></option>
+    </select>
+  </label><br>
+
+  <label for="email_address">Email address:</label>
+  <input type="text" name="email_address" id="email_address"/>
+  <br>
+  <label for="phone_number">Phone number:</label>
+  <input type="text" name="phone_number" id="phone_number"/>
+  <br>
+  <input type='submit' value="Make request"/>
+</form>

@@ -1,0 +1,38 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_animal"</a>Add animal</li>
+  <li><a class="filter-link" href="http://localhost:4567/manager/animals/available_only" class="active">Available Animals</a></li>
+  <li><a class="filter-link" href="http://localhost:4567/manager/animals/unavailable_only">Unavailable</a></li>
+</ul>
+<div class="index">
+<% for animal in @animals %>
+  <%if animal.available_for_adoption == 'f'%>
+    <div class="index-box">
+      <a class="pic" href="../<%=animal.id%>/animal"><img src="<%=animal.image%>" alt="Picture of <%=animal.name%>, a <%=animal.species%>"></a>
+      <p>Name: <%= animal.name %></p>
+      <p>Admission date: <%= animal.admission_date %></p>
+      <p>Species: <%= animal.species %></p>
+        <% if animal.reserved == 't' %>
+          <p> Reserved
+        <% else %>
+          <p>Not reserved.
+        <% end %>
+        </p>
+        <% if animal.available_for_adoption == 't' %>
+          <p>Available
+        <% else %>
+          <p>Not available
+        <% end %>
+         for adoption.</p>
+         <a href="../<%=animal.id%>/animal"><button>Show Animal?</button></a>
+         <br>
+        </div>
+  <% end %>
+<% end %>
+</div>

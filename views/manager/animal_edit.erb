@@ -1,0 +1,69 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar" id="edit-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_animal"</a>Add animal</li>
+  <li><a class="filter-link" href="http://localhost:4567/manager/animals/available_only" class="active">Available Animals</a></li>
+  <li><a class="filter-link" href="http://localhost:4567/manager/animals/unavailable_only">Unavailable</a></li>
+</ul>
+<br><br><br>
+<div class="edit">
+  <h2>Update animal details</h2>
+  <img src="<%=@animal.image%>" alt="image of <%=@animal.name%>, a <%=@animal.species%>.">
+  <form method="post" action="update">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="<%=@animal.name%>"/>
+    <br>
+    <label for="species">Species:</label>
+    <input type="text" name="species" id="species" value="<%=@animal.species%>"/>
+    <br>
+    <label for="admission_date">Date of admission in format (DD/MM/YY):</label>
+    <input type="text" name="admission_date" id="admission_date value="<%=@animal.admission_date%>"/>
+    <br>
+    <label for="available_for_adoption"></label>
+    Is this animal available for adoption?<input type="radio" name="available_for_adoption" id="available_for_adoption" value="t" <% if @animal.available_for_adoption == 't'%> checked="checked" <%end%>> Yes
+    <input type="radio" name="available_for_adoption" id="available_for_adoption" value="f" <% if @animal.available_for_adoption == 'f'%> checked="checked" <%end%>> No
+    <br>
+    <label for="reserved"></label>
+    Is this animal already reserved?<input type="radio" name="reserved" id="reserved" value="t" <% if @animal.reserved == 't'%> checked="checked" <%end%>> Yes
+    <input type="radio" name="reserved" id="reserved" value="f" <% if @animal.reserved == 'f'%> checked="checked" <%end%>> No
+    <br>
+    <label for="needs_garden"></label>
+    Does this animal require a garden?<input type="radio" name="needs_garden" id="needs_garden" value="t" <% if @animal.needs_garden == 't'%> checked="checked" <%end%>> Yes
+    <input type="radio" name="needs_garden" id="needs_garden" value="f" <% if @animal.needs_garden == 'f'%> checked="checked"<%end%>> No
+    <br>
+    <label for="needs_no_pets"></label>
+    Can this animal live with other pets?<input type="radio" name="needs_no_pets" id="needs_no_pets" value="f" <% if @animal.needs_no_pets == 'f'%> checked="checked" <%end%>> Yes
+    <input type="radio" name="needs_no_pets" id="needs_no_pets" value="t" <% if @animal.needs_no_pets == 't'%> checked="checked" <%end%>> No
+    <br>
+    <label for="needs_company"></label>
+    Does this animal need constant attention?<input type="radio" name="needs_company" id="needs_company" value="t" <% if @animal.needs_company == 't'%> checked="checked" <%end%>> Yes
+    <input type="radio" name="needs_company" id="needs_company" value="f" <% if @animal.needs_company == 'f'%> checked="checked" <%end%>> No
+    <br>
+    <label for="about_me">Enter your animal profile:</label><br>
+    <textarea name="about_me" id="about_me" rows="8" cols="80" value="<%=@animal.about_me%>"></textarea>
+    <br>
+    <label for="image"> Upload any animal images if you have them:</label><br>
+    <input type="file" name="image" id="image"/>
+    <br>
+    <button><input type="submit" class="button" class="update submit" value="Update details"></button>
+    <br><br><br>
+</div>
+  <!-- <input type="checkbox" name="vehicle2" value="Car">I have a car
+  <br><br>
+  <input type="submit"> -->
+
+  <!-- @reserved = options['reserved']
+  @available_for_adoption = options['available_for_adoption']
+  @needs_garden = options['needs_garden']
+  @image = options['image']
+  @needs_no_pets = options['needs_no_pets']
+  @needs_company = options['needs_company']
+  @about_me = options['about_me']
+  @id = options['id'].to_i if options['id'] -->
+
+</form>

@@ -1,0 +1,42 @@
+<img src="<%=@animal.image%>" alt="Picture of <%=@animal.name%>, a <%=@animal.species%>">
+<p>Name: <%= @animal.name %></p>
+<p>Species: <%= @animal.species %></p>
+  <% if @animal.reserved == 't' %>
+    <p> Reserved
+  <% else %>
+    <p>Not reserved.
+  <% end %>
+  </p>
+  <% if @animal.available_for_adoption == 't' %>
+    <p>Available
+  <% else %>
+    <p>Not available
+  <% end %>
+  </p>
+  <% if @animal.needs_garden == 't' %>
+    <p>Animal needs
+  <% else %>
+    <p>Animal does not need
+  <% end %>
+   a garden. </p>
+   <% if @animal.needs_company == 't' %>
+     <p>Animal is okay alone.
+   <% else %>
+     <p>Animal needs family and constant attention.
+   <% end %>
+   </p>
+   <% if @animal.needs_no_pets == 't' %>
+     <p>Animal needs a family with no pets.
+   <% else %>
+     <p>Animal is okay with other pets.
+   <% end %>
+   </p>
+   <h5>Animal Profile:</h5>
+   <p><%=@animal.about_me%></p>
+    </p>
+   <a href="../animals"><button>Back to index?</button></a>
+   <br>
+   <form method="get" action="request">
+     <input type="submit" value="Request to give this animal a home?"/>
+   </form>
+   <hr>

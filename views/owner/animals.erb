@@ -1,0 +1,24 @@
+<a href="animals/unreserved">View unreserved animals only?</a>
+<br>
+<br>
+<hr>
+<div class="index">
+<% for animal in @animals %>
+  <%if animal.available_for_adoption == 't'%>
+    <div class="index-box">
+    <a href="<%=animal.id%>/animal"><img src="<%=animal.image%>" alt="Picture of <%=animal.name%>, a <%=animal.species%>"></a>
+    <p>Name: <%= animal.name %></p>
+    <p>Admission date: <%= animal.admission_date %></p>
+    <p>Species: <%= animal.species %></p>
+      <% if animal.reserved == 't' %>
+        <p> Reserved
+      <% else %>
+        <p>Not reserved.
+      <% end %>
+      </p>
+       <a href="<%=animal.id%>/animal"><button>Show Animal?</button></a>
+       <br>
+      </div>
+  <% end %>
+<% end %>
+</div>

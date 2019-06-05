@@ -1,0 +1,36 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_owner">Add owner</a></li>
+</ul>
+<br><br><br>
+<div class="edit">
+<h2>Update owner details</h2>
+<form method="post" action="update">
+  <label for="first_name">First name:</label>
+  <input type="text" name="first_name" id="first_name" value="<%=@owner.first_name%>"/>
+  <br>
+  <label for="second_name">Last name:</label>
+  <input type="text" name="second_name" id="second_name" value="<%=@owner.second_name%>"/>
+  <br>
+  <label for="has_garden"></label>
+  Does this person have a garden?<input type="radio" name="has_garden" id="has_garden" value="t" <% if @owner.has_garden == 't'%> checked="checked" <%end%>> Yes
+  <input type="radio" name="has_garden" id="has_garden" value="f" <% if @owner.has_garden == 'f'%> checked="checked" <%end%>> No
+  <br>
+  <label for="has_no_pets"></label>
+  Does this owner have other pets?<input type="radio" name="has_no_pets" id="has_no_pets" value="f" <% if @owner.has_no_pets == 'f'%> checked="checked" <%end%>> Yes
+  <input type="radio" name="has_no_pets" id="has_no_pets" value="t" <% if @owner.has_no_pets == 't'%> checked="checked" <%end%>> No
+  <br>
+  <label for="lives_with_others"></label>
+  Does this owner live alone?<input type="radio" name="lives_with_others" id="lives_with_others" value="f" <% if @owner.lives_with_others == 'f'%> checked="checked" <%end%>> Yes
+  <input type="radio" name="lives_with_others" id="lives_with_others" value="t" <% if @owner.lives_with_others == 't'%> checked="checked" <%end%>> No
+  <br>
+  <input type="submit" value="Update details">
+
+</form>
+</div>

@@ -1,0 +1,21 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<br><br><br>
+<div class="list">
+<% for request in @requests %>
+  <% if request.decided == 'f' %>
+    Owner: <%=request.owner.first_name%> <%=request.owner.second_name%>
+    <br>
+    Animal: <%=request.animal.name%>
+    <hr>
+    <form method="post" action="request/approved">
+        <input type="submit" value="Temporarily approved request?"/>
+    </form>
+  <% end %>
+<% end %>
+</div>

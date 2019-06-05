@@ -1,0 +1,38 @@
+<ul class="nav-bar">
+  <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+  <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+</ul>
+<ul class="filter-bar">
+  <li><a class="filter-link" href="http://localhost:4567/manager/create_adoption">Add adoption</a></li>
+</ul>
+</div>
+<br><br>
+<div class="edit">
+<h2>Create new adoption</h2>
+<form action="adoptions" method="post">
+  <label>
+  Select an owner:
+    <select name="owner_id">
+      <% for owner in @owners %>
+      <option value="<%= owner.id %>"><%= owner.first_name %> <%= owner.second_name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <label>
+    Select an animal:
+    <select name="animal_id">
+      <% for animal in @animals %>
+        <% if animal.available_for_adoption == 't'%>
+          <option value="<%= animal.id %>"><%= animal.name %></option>
+        <% end %>
+      <% end %>
+    </select>
+  </label>
+
+  <input type='submit' value="Create Adoption">
+</form>
+</div>
