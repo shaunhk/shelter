@@ -32,7 +32,7 @@ animal1 = Animal.new({'name' => 'God', 'species' => 'Cat',
 animal1.save()
 animal2 = Animal.new({'name' => 'Patch', 'species' => 'Dog',
 'admission_date' => '22/03/19', 'needs_garden' => false, 'image' => '/Patch-Dog.jpg',
-'needs_no_pets' => false, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
+'needs_no_pets' => false, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal2.save()
 animal3 = Animal.new({'name' => 'Sea Biscuit', 'species' => 'Horse',
 'admission_date' => '22/11/18', 'needs_garden' => true, 'image' => '/seabiscuit-horse.jpg',
@@ -106,9 +106,6 @@ adoption5 = Adoption.new('animal_id' => animal11.id, 'owner_id' => owner3.id)
 adoption5.save()
 adoption6 = Adoption.new('animal_id' => animal14.id, 'owner_id' => owner3.id)
 adoption6.save()
-
-request1 = Request.new({'animal_id' => animal2.id, 'owner_id' => owner1.id, 'phone_number' => '071241815892', 'email_address' => 'Rats4giveme@msn.com', 'decided' => false})
-request1.save()
 
 binding.pry
 nil

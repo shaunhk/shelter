@@ -8,10 +8,13 @@
 <ul class="filter-bar">
   <li><a class="filter-link" href="http://localhost:4567/manager/create_adoption">Add adoption</a></li>
 </ul>
-</div>
+
+<br><br><br><br>
+
+
 <div class="list">
 <% for adoption in @adoptions %>
-  Owner: <%=adoption.owner.first_name%> <%=adoption.owner.second_name%>
+  Owner: <%=adoption.owner.first_name %> <%= adoption.owner.second_name %>
   <br>
   Animal: <%=adoption.animal.name%>
   <hr>

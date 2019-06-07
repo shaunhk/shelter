@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #white;
+  background-color: white;
 }
 
 button {
@@ -11,9 +11,17 @@ button {
 
 h1 {
   text-align: center;
-  font-family: Georgia;
+  font-family: arial;
   color: #3500D3;
   font-size: 60px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+h2 {
+  font-family: arial;
+  font-size: 40px;
+  color: #003399;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 img {
@@ -23,7 +31,7 @@ img {
 }
 
 p {
-  font-family: sans-serif;
+  font-family: arial;
   font-size: 18px;
   color: #374785;
 }
@@ -34,16 +42,12 @@ ul {
 
 a:hover {
   background-color: #9099A2;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #57CB90;
-}
-
-h2 {
-  font-family: Georgia;
-  font-size: 40px;
-  color: #003399;
+  background-color: #242582;
+  cursor: pointer;
 }
 
 img:hover {
@@ -51,60 +55,23 @@ img:hover {
   height: 420px;
 }
 
-.user-login {
-  text-align: center;
+.active {
+  background-color: #3CC47C;
 }
 
-.list {
-  display: block;
-  padding: 100px 0 0 0px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 18px;
-  color: #374785;
-}
-
-.edit {
-  padding-left: 500px;
-  font-size: 18px;
-}
-
-.button {
-  background-color: #;
-  color: white;
-  font-size: 18px;
-  font-family: sans-serif;
-  border-radius: 25%;
-}
-
-.delete {
-  background-color: red;
-  color: white;
-  font-size: 18px;
-  font-family: sans-serif;
-  border-radius: 25%;
-}
-
-.manager {
-}
-
-.welcome-buttons {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 50%;
-  height: 180px;
-  margin: 10px 400px;
-  padding: 0px 40px 10px 40px;
-  text-align: center;
-}
-
-.about_me {
+.about-me {
   display: block;
   width: 500px;
   text-align: center;
   align-content: center;
   padding: 0 0 0 480px;
+}
+
+.button {
+  color: white;
+  font-size: 18px;
+  font-family: arial;
+  border-radius: 25%;
 }
 
 .button-welcome {
@@ -115,35 +82,23 @@ img:hover {
   align-content: center;
 }
 
-.welcome {
-  font-size: 80px;
+.center {
   text-align: center;
-  color: #659DBD;
-  font-family: sans-serif;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 50px;
+  color: #0099CC;
 }
 
-.nav-bar {
-  display: flex;
-  background-color: #0099CC;
-  position: fixed;
-  height: 60px;
-  width: 100%;
-  margin: 0;
-  justify-content: space-evenly;
-  padding: 0;
-  top: 0;
-  border-radius: 0 0 5% 5%;
-  z-index: 1;
+.delete {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-family: arial;
+  border-radius: 25%;
 }
 
-.nav-link {
-  display: inline;
-  text-decoration: #F4F4F4;
-  color: #F4F4F4;
-  width: 60px;
-  font-size: 40px;
-  font-family: Georgia;
+.edit {
+  padding-left: 500px;
+  font-size: 18px;
 }
 
 .filter-bar {
@@ -159,43 +114,12 @@ img:hover {
   background-color: #5AB9EA;
   justify-content: space-evenly;
   font-size: 25px;
-  border-radius: 0 0 5% 5%;
+  border-radius: 0 0 0 0;
 }
 
 .filter-link {
   text-decoration: none;
   color: #F4F4F4;
-}
-
-.filter-link:hover {
-  width: 415px;
-  height: 362px;
-  border-radius: 50%;
-  color: #FFCE00;
-}
-
-.nav-link:hover {
-  border-radius: 50%;
-  color: #FFCE00;
-}
-
-.pic {
-
-}
-
-.index-img:hover {
-  width: 415px;
-  height: 362px;
-}
-
-.active {
-  background-color: #3CC47C;
-}
-
-.center {
-  text-align: center;
-  font-size: 50px;
-  color: #0099CC;
 }
 
 .index {
@@ -223,15 +147,71 @@ img:hover {
   background-color: white;
 }
 
+.list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  font-size: 18px;
+  color: #374785;
+  flex-flow: column;
+}
+
+.login-start {
+  text-align: center;
+}
+
+.login-button {
+  background-color: #5AB9EA;
+  font-size: 100px;
+  border-radius: 0%;
+  background-color: #003399;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: #0099CC;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  justify-content: space-evenly;
+  padding: 0;
+  top: 0;
+  border-radius: 0 0 0 0;
+  z-index: 1;
+}
+
+.nav-link {
+  display: inline;
+  text-decoration: #F4F4F4;
+  color: #F4F4F4;
+  width: 60px;
+  font-size: 40px;
+  font-family: arial;
+}
+
 .new-button {
   background-color: #5AB9EA;
   font-size: 20px;
   border-radius: 25%;
 }
 
+.user-login {
+  text-align: center;
+}
+
 .pending {
   font-size: 25px;
-  font-family: Georgia;
+  font-family: arial;
   color: #5680E9;
   text-align: center;
 }
@@ -243,16 +223,52 @@ img:hover {
   text-align: center;
 }
 
-#edit-bar {
-  top: 0;
+.welcome {
+  font-size: 80px;
+  text-align: center;
+  color: #659DBD;
+  font-family: arial;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-#owner {
-  background-color: #3500D3;
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 50%;
+  height: 180px;
+  margin: 10px 400px;
+  padding: 0px 40px 10px 40px;
+  text-align: center;
+}
+
+.filter-link:hover {
+  width: 415px;
+  height: 362px;
+  border-radius: 50%;
+  color: #FFCE00;
+}
+
+.index-img:hover {
+  width: 415px;
+  height: 362px;
+}
+
+.nav-link:hover {
+  border-radius: 50%;
+  color: #FFCE00;
+}
+
+#edit-bar {
+  top: 0;
 }
 
 #logo {
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   font-family: arial;
   font-style: italic;
+}
+
+#owner {
+  background-color: #3500D3;
 }
