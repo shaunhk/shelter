@@ -87,9 +87,9 @@ end
 post '/manager/animals' do
   @animal = Animal.new(params)
   @filename = params[:image][:filename]
-  @filepath = "/#{@filename}"
+  @filepath = "/images/#{@filename}"
   file = params[:image][:tempfile]
-  File.open("./public#{@filepath}", 'wb') do |f|
+  File.open("./public/images/#{@filepath}", 'wb') do |f|
     f.write(file.read)
   end
   @animal.image = @filepath
