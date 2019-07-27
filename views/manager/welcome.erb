@@ -1,33 +1,35 @@
 <div>
-  <ul class="nav-bar">
-    <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
-    <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
-    <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
-    <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
-    <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
-  </ul>
-</div>
+  <div>
+    <ul class="nav-bar">
+      <li><a class="nav-link" href="http://localhost:4567/manager/welcome">Home</a></li>
+      <li><a class="nav-link" href="http://localhost:4567/manager/animals" class="active">Animals</a></li>
+      <li><a class="nav-link" href="http://localhost:4567/manager/owners">Owners</a></li>
+      <li><a class="nav-link" href="http://localhost:4567/manager/adoptions">Adoptions</a></li>
+      <li><a class="nav-link" href="http://localhost:4567/manager/requests">Requests</a></li>
+    </ul>
+  </div>
 
-<div>
-  <br><br>
-  <h2 class="welcome">Hello Mr Dennis Reynolds!</h2>
-  <br>
-  <p class="pending">You have <%= @pending %> <a href="requests">requests pending</a></p>
-</div>
-  <br>
-  <p class="center">What would you like to do today</p>
+  <div>
+    <br><br>
+    <h2 class="welcome">Hello Mr Dennis Reynolds!</h2>
+    <br>
+    <p class="pending">You have <%= @pending %> <a href="requests">requests pending</a></p>
+  </div>
+    <br>
+    <p class="center">What would you like to do today</p>
 
-<div class="welcome-buttons">
-  <a href="animals" class="button-welcome"><button type="submit" class="button">View animals</button></a>
-  <br>
-  <a href="create_animal" class="button-welcome"><button type="submit" class="button">Add an animal</button></a>
-  <br>
-  <a href="owners" class="button-welcome"><button type="submit" class="button">View owners</button></a>
-  <br>
-  <a href="create_owner" class="button-welcome"><button type="submit" class="button">Add owner</button></a>
-  <br>
-  <a href="adoptions" class="button-welcome"><button type="submit" class="button">View adoptions</button></a>
-  <br>
-  <a href="create_adoption" class="button-welcome"><button type="submit" class="button">Pair up an animal and a home</button></a>
-  <br>
-<div>
+  <div class="welcome-buttons">
+    <a href="animals" class="button-welcome"><button type="submit" class="button">View animals</button></a>
+    <br>
+    <a href="create_animal" class="button-welcome"><button type="submit" class="button">Add an animal</button></a>
+    <br>
+    <a href="owners" class="button-welcome"><button type="submit" class="button">View owners</button></a>
+    <br>
+    <a href="create_owner" class="button-welcome"><button type="submit" class="button">Add owner</button></a>
+    <br>
+    <a href="adoptions" class="button-welcome"><button type="submit" class="button">View adoptions</button></a>
+    <br>
+    <a href="create_adoption" class="button-welcome"><button type="submit" class="button">Pair up an animal and a home</button></a>
+    <br>
+  </div>
+</div>

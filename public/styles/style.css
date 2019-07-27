@@ -4,7 +4,8 @@ body {
 }
 
 button {
-  background-color: #5AB9EA;
+  background-color: #242582;
+  color: white;
   font-size: 20px;
   border-radius: 25%;
 }
@@ -20,7 +21,7 @@ h1 {
 h2 {
   font-family: arial;
   font-size: 40px;
-  color: #003399;
+  color: #3500D3;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
@@ -46,7 +47,11 @@ a:hover {
 }
 
 button:hover {
-  background-color: #242582;
+  background-color: #5AB9EA;
+  cursor: pointer;
+}
+
+.button:hover {
   cursor: pointer;
 }
 
@@ -71,7 +76,7 @@ img:hover {
   color: white;
   font-size: 18px;
   font-family: arial;
-  border-radius: 25%;
+  color: #3500D3;
 }
 
 .button-welcome {
@@ -162,18 +167,18 @@ img:hover {
 }
 
 .login-button {
-  background-color: #5AB9EA;
   font-size: 100px;
+  text-align: center;
+  font-style: italic;
   border-radius: 0%;
-  background-color: #003399;
-  color: white;
-  width: 100%;
+  width: 45vw;
   justify-content: center;
 }
 
 .login-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
 }
 
 .nav-bar {
@@ -207,6 +212,8 @@ img:hover {
 
 .user-login {
   text-align: center;
+  color: #3500D3;
+
 }
 
 .pending {
@@ -257,6 +264,18 @@ img:hover {
 .nav-link:hover {
   border-radius: 50%;
   color: #FFCE00;
+}
+
+.user-welcome-page {
+  background-image: url('/images/paw-prints.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-page {
+  background-image: url('/images/pets.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #edit-bar {

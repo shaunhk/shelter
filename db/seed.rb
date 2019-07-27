@@ -27,67 +27,67 @@ owner4 = Owner.new({'first_name' => 'Ronald', 'second_name' => 'McDonald',
 owner4.save()
 
 animal1 = Animal.new({'name' => 'God', 'species' => 'Cat',
-'admission_date' => '22/12/18', 'needs_garden' => false, 'image' => '/God-cat.jpg',
+'admission_date' => '22/12/18', 'needs_garden' => false, 'image' => '/images/God-cat.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal1.save()
 animal2 = Animal.new({'name' => 'Patch', 'species' => 'Dog',
-'admission_date' => '22/03/19', 'needs_garden' => false, 'image' => '/Patch-Dog.jpg',
+'admission_date' => '22/03/19', 'needs_garden' => false, 'image' => '/images/Patch-Dog.jpg',
 'needs_no_pets' => false, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal2.save()
 animal3 = Animal.new({'name' => 'Sea Biscuit', 'species' => 'Horse',
-'admission_date' => '22/11/18', 'needs_garden' => true, 'image' => '/seabiscuit-horse.jpg',
+'admission_date' => '22/11/18', 'needs_garden' => true, 'image' => '/images/seabiscuit-horse.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false })
 animal3.save()
 animal4 = Animal.new({'name' => 'Moses', 'species' => 'Cat',
-'admission_date' => '31/05/19', 'needs_garden' => false, 'image' => '/moses-cat.jpg',
+'admission_date' => '31/05/19', 'needs_garden' => false, 'image' => '/images/moses-cat.jpg',
 'needs_no_pets' => true, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal4.save()
 animal5 = Animal.new({'name' => 'Bageera', 'species' => 'Cat',
-'admission_date' => '03/04/19', 'needs_garden' => false, 'image' => '/bageera-cat.jpg',
+'admission_date' => '03/04/19', 'needs_garden' => false, 'image' => '/images/bageera-cat.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
 animal5.save()
 animal6 = Animal.new({'name' => 'Rover', 'species' => 'Dog',
-'admission_date' => '28/08/18', 'needs_garden' => true, 'image' => '/Rover-dog.jpg',
+'admission_date' => '28/08/18', 'needs_garden' => true, 'image' => '/images/Rover-dog.jpg',
 'needs_no_pets' => true, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
 animal6.save()
 animal7 = Animal.new({'name' => 'Thundergun', 'species' => 'Horse',
-'admission_date' => '19/08/18', 'needs_garden' => false, 'image' => '/thundergun-horse.jpg',
+'admission_date' => '19/08/18', 'needs_garden' => false, 'image' => '/images/thundergun-horse.jpg',
 'needs_no_pets' => false, 'needs_company' => true, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
 animal7.save()
 animal8 = Animal.new({'name' => 'Midget', 'species' => 'Hamster',
-'admission_date' => '13/04/19', 'needs_garden' => false, 'image' => '/Midget.jpg',
+'admission_date' => '13/04/19', 'needs_garden' => false, 'image' => '/images/Midget.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => true, 'available_for_adoption' => true})
 animal8.save()
 animal9 = Animal.new({'name' => 'Peanut', 'species' => 'Hamster',
-'admission_date' => '25/04/19', 'needs_garden' => false, 'image' => '/Peanut-hamster.jpg',
+'admission_date' => '25/04/19', 'needs_garden' => false, 'image' => '/images/Peanut-hamster.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => true, 'available_for_adoption' => true})
 animal9.save()
 animal10 = Animal.new({'name' => 'Don', 'species' => 'Budgie',
-'admission_date' => '22/02/19', 'needs_garden' => false, 'image' => '/Don.jpg',
+'admission_date' => '22/02/19', 'needs_garden' => false, 'image' => '/images/Don.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
 animal10.save()
 animal11 = Animal.new({'name' => 'Super', 'species' => 'Parrot',
-'admission_date' => '15/05/19', 'needs_garden' => false, 'image' => '/Super.jpg',
+'admission_date' => '15/05/19', 'needs_garden' => false, 'image' => '/images/Super.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => true, 'available_for_adoption' => true})
 animal11.save()
 animal12 = Animal.new({'name' => 'Cuddly', 'species' => 'Snake',
-'admission_date' => '21/04/19', 'needs_garden' => false, 'image' => '/cuddly.jpg',
+'admission_date' => '21/04/19', 'needs_garden' => false, 'image' => '/images/cuddly.jpg',
 'needs_no_pets' => true, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => true})
 animal12.save()
 animal13 = Animal.new({'name' => 'Smartie', 'species' => 'Rabbit',
-'admission_date' => '09/04/19', 'needs_garden' => true, 'image' => '/Smartie.jpg',
+'admission_date' => '09/04/19', 'needs_garden' => true, 'image' => '/images/Smartie.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal13.save()
 animal14 = Animal.new({'name' => 'Tofu', 'species' => 'Rabbit',
-'admission_date' => '02/01/19', 'needs_garden' => true, 'image' => '/tofu.jpg',
+'admission_date' => '02/01/19', 'needs_garden' => true, 'image' => '/images/tofu.jpg',
 'needs_no_pets' => false, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal14.save()
 animal15 = Animal.new({'name' => 'Elvis', 'species' => 'Cat',
-'admission_date' => '31/05/19', 'needs_garden' => false, 'image' => '/Elvis.jpg',
+'admission_date' => '31/05/19', 'needs_garden' => false, 'image' => '/images/Elvis.jpg',
 'needs_no_pets' => true, 'needs_company' => false, 'about_me' => '', 'reserved' => false, 'available_for_adoption' => false})
 animal15.save()
 animal16 = Animal.new({'name' => 'Rocky', 'species' => 'Parrot',
-'admission_date' => '16/09/18', 'needs_garden' => true, 'image' => '/Rocky.jpg',
+'admission_date' => '16/09/18', 'needs_garden' => true, 'image' => '/images/Rocky.jpg',
 'needs_no_pets' => true, 'needs_company' => false, 'about_me' => 'Rocky is an evil parrot. You will require a garden to get away from this monster.
 
 It is best if you have a family already, because you are not getting a boyfriend with this murderous beast in your home. Aint no one got time for that.
