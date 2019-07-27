@@ -6,8 +6,8 @@ body {
 button {
   background-color: #242582;
   color: white;
-  font-size: 20px;
-  border-radius: 25%;
+  font-size: 25px;
+
 }
 
 h1 {
@@ -28,7 +28,7 @@ h2 {
 img {
   width: 400px;
   height: 400px;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 p {
@@ -135,7 +135,7 @@ img:hover {
 }
 
 .index-box {
-  width: 500px;
+  width: 40vw;
   float: right;
   margin: 100px;
   margin-left: auto;

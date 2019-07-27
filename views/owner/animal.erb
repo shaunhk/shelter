@@ -1,3 +1,4 @@
+<body class="user-welcome-page">
 <ul class="nav-bar" id="owner">
   <li><a class="nav-link" href="http://localhost:4567/owner/animals">View all animals</a></li>
   <li><a class="nav-link" href="http://localhost:4567/owner/animals/unreserved" class="active">View unreserved animals only</a></li>
@@ -8,8 +9,13 @@
 <hr>
 
 <div class="list">
+  <div>
 <img src="<%=@animal.image%>" alt="Picture of <%=@animal.name%>, a <%=@animal.species%>">
+</div>
+<div>
 <p>Name: <%= @animal.name %></p>
+</div>
+<div>
 <p>Species: <%= @animal.species %></p>
   <% if @animal.reserved == 't' %>
     <p> Reserved
@@ -41,6 +47,8 @@
      <p>Animal is okay with other pets.
    <% end %>
    </p>
+   </div>
+   <div>
    <h5>Animal Profile:</h5>
    <p class="list"><%=@animal.about_me%></p>
     </p>
@@ -49,5 +57,7 @@
    <form method="get" action="request">
     <input type="submit" class="delete" value="Request to give this animal a home"/>
    </form>
+   </div>
    <hr>
    </div>
+</body>
