@@ -84,16 +84,26 @@ post '/manager/:id/animal/update' do
   erb (:"manager/animal_update")
 end
 
+# This method will allow users to post their images when submitting new animal details
 post '/manager/animals' do
+  # An @animal object is first assigned to the entered details
   @animal = Animal.new(params)
+  # A filename variable is then assigned to the file name of the image uploaded
   @filename = params[:image][:filename]
+  # A filepath variable is assigned to the desired filepath where the image will be saved
   @filepath = "/images/#{@filename}"
+  # A file variable is assigned to the image file that is temporarily accessible from the upload
   file = params[:image][:tempfile]
-  File.open("./public/images/#{@filepath}", 'wb') do |f|
+  # The file is then read(essentially copied) and then wrote(pasted) into its new folder directory
+  File.open("./public#{@filepath}", 'wb') do |f|
     f.write(file.read)
   end
+  # The animal image key is then accessed in the ruby animal object and the value is then assigned to the storage filepath
   @animal.image = @filepath
+  # The animal object is then called upon by an appropriate method which will log the deails in an sql
+  # database
   @animal.save()
+  # The erb browser address for this method is assigned.
   erb (:"manager/new_animal")
 end
 
