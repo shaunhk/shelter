@@ -38,5 +38,3 @@ cd shelter
 ruby db/seed.rb
 ruby app.rb
 ```
-
-Please note that project comes with quite a few images to demonstrate features.

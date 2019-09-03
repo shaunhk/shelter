@@ -76,10 +76,10 @@ img:hover {
   color: white;
   font-size: 18px;
   font-family: arial;
-  color: #3500D3;
 }
 
 .button-welcome {
+  color: red;
   display: block;
   padding: 0 40px 10px 0;
   size: 40px 10px;
